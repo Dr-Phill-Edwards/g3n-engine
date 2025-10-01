@@ -1,4 +1,4 @@
-module github.com/g3n/engine
+module github.com/Dr-Phill-Edwards/g3n-engine
 
 go 1.13
 

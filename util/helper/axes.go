@@ -5,11 +5,11 @@
 package helper
 
 import (
-	"github.com/g3n/engine/geometry"
-	"github.com/g3n/engine/gls"
-	"github.com/g3n/engine/graphic"
-	"github.com/g3n/engine/material"
-	"github.com/g3n/engine/math32"
+	"github.com/Dr-Phill-Edwards/g3n-engine/geometry"
+	"github.com/Dr-Phill-Edwards/g3n-engine/gls"
+	"github.com/Dr-Phill-Edwards/g3n-engine/graphic"
+	"github.com/Dr-Phill-Edwards/g3n-engine/material"
+	"github.com/Dr-Phill-Edwards/g3n-engine/math32"
 )
 
 // Axes is a visual representation of the three axes.

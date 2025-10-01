@@ -5,7 +5,7 @@
 package gui
 
 import (
-	"github.com/g3n/engine/window"
+	"github.com/Dr-Phill-Edwards/g3n-engine/window"
 )
 
 // Core events sent by the GUI manager.

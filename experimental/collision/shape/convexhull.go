@@ -5,9 +5,9 @@
 package shape
 
 import (
-	"github.com/g3n/engine/experimental/collision"
-	"github.com/g3n/engine/geometry"
-	"github.com/g3n/engine/math32"
+	"github.com/Dr-Phill-Edwards/g3n-engine/experimental/collision"
+	"github.com/Dr-Phill-Edwards/g3n-engine/geometry"
+	"github.com/Dr-Phill-Edwards/g3n-engine/math32"
 )
 
 // ConvexHull is a convex triangle-based geometry used for collision detection and contact resolution.

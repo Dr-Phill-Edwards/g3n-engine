@@ -11,10 +11,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/g3n/engine/audio/al"
-	"github.com/g3n/engine/audio/vorbis"
-	"github.com/g3n/engine/renderer"
-	"github.com/g3n/engine/window"
+	"github.com/Dr-Phill-Edwards/g3n-engine/audio/al"
+	"github.com/Dr-Phill-Edwards/g3n-engine/audio/vorbis"
+	"github.com/Dr-Phill-Edwards/g3n-engine/renderer"
+	"github.com/Dr-Phill-Edwards/g3n-engine/window"
 )
 
 // Application

@@ -15,9 +15,9 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/g3n/engine/core"
-	"github.com/g3n/engine/gls"
-	"github.com/g3n/engine/gui/assets"
+	"github.com/Dr-Phill-Edwards/g3n-engine/core"
+	"github.com/Dr-Phill-Edwards/g3n-engine/gls"
+	"github.com/Dr-Phill-Edwards/g3n-engine/gui/assets"
 	"github.com/go-gl/glfw/v3.3/glfw"
 )
 

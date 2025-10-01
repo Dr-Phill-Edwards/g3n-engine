@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/g3n/engine/math32"
-	"github.com/g3n/engine/text"
-	"github.com/g3n/engine/window"
+	"github.com/Dr-Phill-Edwards/g3n-engine/math32"
+	"github.com/Dr-Phill-Edwards/g3n-engine/text"
+	"github.com/Dr-Phill-Edwards/g3n-engine/window"
 )
 
 // Edit represents a text edit box GUI element

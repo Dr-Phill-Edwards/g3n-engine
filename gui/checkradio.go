@@ -5,8 +5,8 @@
 package gui
 
 import (
-	"github.com/g3n/engine/gui/assets/icon"
-	"github.com/g3n/engine/window"
+	"github.com/Dr-Phill-Edwards/g3n-engine/gui/assets/icon"
+	"github.com/Dr-Phill-Edwards/g3n-engine/window"
 )
 
 const (
