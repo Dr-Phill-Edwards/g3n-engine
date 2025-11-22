@@ -77,6 +77,14 @@ func (f *ControlFolder) AddCheckBox(text string) *CheckRadio {
 	return cb
 }
 
+func (f *ControlFolder) AddRadioButton(text, group string) *CheckRadio {
+
+	cb := NewRadioButton(text)
+	cb.SetGroup(group)
+	f.tree.Add(cb)
+	return cb
+}
+
 // AddSlider adds a slider to the control folder's tree
 func (f *ControlFolder) AddSlider(text string, sf, v float32) *Slider {
 
