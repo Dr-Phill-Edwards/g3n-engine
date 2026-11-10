@@ -13,12 +13,16 @@ import (
 
 // NewSphere creates a sphere geometry with the specified radius and number of radial segments in each dimension.
 func NewSphere(radius float64, widthSegments, heightSegments int) *Geometry {
-	return NewSphereSector(radius, widthSegments, heightSegments, 0, math.Pi*2, 0, math.Pi)
+	return NewEllipsoidSector(radius, radius, widthSegments, heightSegments, 0, math.Pi*2, 0, math.Pi)
+}
+
+func NewEllipsoid(radius, zradius float64, widthSegments, heightSegments int) *Geometry {
+	return NewEllipsoidSector(radius, zradius, widthSegments, heightSegments, 0, math.Pi*2, 0, math.Pi)
 }
 
 // NewSphereSector creates a sphere sector geometry with the specified radius, number of radial segments in each dimension, elevation
 // start angle in radians, elevation size angle in radians, sector start angle in radians, and sector size angle in radians.
-func NewSphereSector(radius float64, widthSegments, heightSegments int, phiStart, phiLength, thetaStart, thetaLength float64) *Geometry {
+func NewEllipsoidSector(radius, zradius float64, widthSegments, heightSegments int, phiStart, phiLength, thetaStart, thetaLength float64) *Geometry {
 
 	s := NewGeometry()
 
@@ -42,7 +46,7 @@ func NewSphereSector(radius float64, widthSegments, heightSegments int, phiStart
 			u := float64(x) / float64(widthSegments)
 			px := -radius * math.Cos(phiStart+u*phiLength) * math.Sin(thetaStart+v*thetaLength)
 			py := radius * math.Cos(thetaStart+v*thetaLength)
-			pz := radius * math.Sin(phiStart+u*phiLength) * math.Sin(thetaStart+v*thetaLength)
+			pz := zradius * math.Sin(phiStart+u*phiLength) * math.Sin(thetaStart+v*thetaLength)
 			normal.Set(float32(px), float32(py), float32(pz)).Normalize()
 
 			positions.Set(index*3, float32(px), float32(py), float32(pz))
