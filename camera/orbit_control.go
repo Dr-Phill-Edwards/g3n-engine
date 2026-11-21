@@ -298,7 +298,7 @@ func (oc *OrbitControl) onKey(evname string, ev interface{}) {
 			oc.Rotate(oc.KeyRotSpeed, 0)
 		}
 	}
-	if kev.Mods == window.ModControl && oc.enabled&OrbitZoom != 0 {
+	if kev.Mods == window.ModAlt && oc.enabled&OrbitZoom != 0 {
 		switch kev.Key {
 		case window.KeyUp:
 			oc.Zoom(-oc.KeyZoomSpeed)
